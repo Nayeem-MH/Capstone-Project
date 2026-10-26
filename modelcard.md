@@ -30,6 +30,7 @@ How the approach evolved:
 
 - **Rounds 1-4:** broad exploration. Queries were spread widely across each space to find promising regions.
 - **Rounds 5-9:** targeted exploitation. Where trends were clear, queries concentrated there. For F5, x1 was pushed upwards with the other inputs near 1. For F6 and F7, queries refined around the best points (F6: x3≈0.66, x4≈0.8-0.85, low x5; F7: x6≈0.65).
+- **Rounds 10-13:** refinement of best points. Small budget of queries left, so efforts were focussed around the best points in each function instead of further exploration.
 - Exploration was kept for difficult functions. F1 (outputs ≈0 nearly everywhere) and F4 (very rough) stayed cautious or exploratory, because the surrogate gave little to exploit.
 
 ### **Performance**
