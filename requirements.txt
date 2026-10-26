@@ -1,0 +1,8 @@
+Tools and packages used:
+- Python 3.14.6
+- Libraries:
+  - NumPy
+  - pandas
+  - pyplot from matplotlib
+  - norm from scipy.stats
+  - GaussianProcessRegressor, RBF, Matern and ConstantKernel from scikit-learn
