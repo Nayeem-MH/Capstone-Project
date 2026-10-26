@@ -58,7 +58,7 @@ Metrics used:
 
 #### **Constraints and failure modes:**
 
-- Sparse data in high dimensions: 9 points in 8D (F8) leave the surrogate very uncertain almost everywhere.
+- Sparse data in high dimensions: 13 points in 8D (F8) leave the surrogate very uncertain almost everywhere.
 - Rough functions: F4 swings from +0.46 to -0.98 across small moves, so the GP smoothness assumption fails and EI can be misled.
 - Scale problems: F1's outputs span 10<sup>-11</sup> to 10<sup>-143</sup>, so a standard GP learns almost nothing without a transform.
 - Exploitation drift: Later rounds concentrate near the current best, which risks a local optimum and leaves boundaries and other regions unexplored (F2's second region is one example).
