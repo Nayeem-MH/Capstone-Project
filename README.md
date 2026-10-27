@@ -29,7 +29,7 @@ There are 8 unknown functions of varying dimensionality and starting dataset siz
 - Function 7 - 6D, 30 initial input-output pairs, 1D output Y
 - Function 8 - 8D, 40 initial input-output pairs, 1D output Y
 
-Each query must be submitted in the format ***x<sub>1</sub>-x<sub>2</sub>-x<sub>3</sub>-...-x<sub>n</sub>*** with each variable specified to **exactly 6 decimal places**. The output returned is a single continuous value, which varies depending on the function queried. For example, function 1 has outputs that lie closely to 0 with the best output being **7.71 x 10<sup>-16</sup>** and the worst output being **-3.61 x 10<sup>-3</sup>**. Function 5 has a much wider range, with the best and worst outputs being **1088.86** and **0.11**.
+Each query must be submitted in the format ***x<sub>1</sub>-x<sub>2</sub>-x<sub>3</sub>-...-x<sub>n</sub>*** with each variable specified to **exactly 6 decimal places**. The output returned is a single continuous value, which varies depending on the function queried. In the initial datasets, function 1 has outputs that lie closely to 0 with the best output being **7.71 x 10<sup>-16</sup>** and the worst output being **-3.61 x 10<sup>-3</sup>**. Function 5 has a much wider range, with the best and worst outputs being **1088.86** and **0.11**.
 
 --------
 
