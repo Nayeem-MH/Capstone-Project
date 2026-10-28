@@ -35,9 +35,11 @@ Each query must be submitted in the format ***x<sub>1</sub>-x<sub>2</sub>-x<sub>
 
 ## Technical Approach
 
-Each function is modelled using a Gaussian Process surrogate model to fit the data with an Expected Improvement acquisition function (*xi*) to guide where the best improvement may be found. This is coupled with a visualisation for each function to provide better interpretability of the model and increase confidence in query decisions (as regions of improvement become tighter, model uncertainty around selected inputs decreases). 
+Each function is modelled using a Gaussian Process surrogate model to fit the data with an Expected Improvement acquisition function (*xi*) to guide where the best improvement may be found. This is coupled with a visualisation for each function to provide better interpretability of the model and increase confidence in query decisions (as regions of improvement become tighter, model uncertainty around selected inputs decreases). The EI visualisation is viewed in pairwise slices, and can be used to view the regions of improvement for each pair of variables. This view is updated after each new observation, so only the final view is visible inside the Jupyter notebooks for each function.
 
 The exploration/exploitation balance is controlled by *xi*, which is initialised at 0.01. This provides a good balance between exploration/exploitation, and can be increased or decreased (between 0.001 and 0.05). For functions that return promising improvements this is left unchanged at *xi* = 0.01.
+
+Each notebook contains all inputs/outputs for queries within that function, with any parameter or script changes noted at the exact stage they were made.
 
 ### Manual queries were used at 3 points in the optimisation process. 
 - In round 11, F5's inputs were pushed to the upper boundary after noticing that with high *x<sub>2</sub>*, *x<sub>3</sub>*, *x<sub>4</sub>* (all >0.95), increasing *x<sub>1</sub>* led to increased outputs. This resulted in the highest output for that function of ***8662***, which the optimiser had not been able to improve upon. It is unknown if the optimiser would have converged on this value within the query budget without manual intervention.
