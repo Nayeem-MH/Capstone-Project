@@ -37,7 +37,7 @@ Each query must be submitted in the format ***x<sub>1</sub>-x<sub>2</sub>-x<sub>
 
 Each function is modelled using a Gaussian Process surrogate model to fit the data with an Expected Improvement acquisition function (*xi*) to guide where the best improvement may be found. This is coupled with a visualisation for each function to provide better interpretability of the model and increase confidence in query decisions (as regions of improvement become tighter, model uncertainty around selected inputs decreases). The EI visualisation is viewed in pairwise slices, and can be used to view the regions of improvement for each pair of variables. This view is updated after each new observation, so only the final view is visible inside the Jupyter notebooks for each function.
 
-The exploration/exploitation balance is controlled by *xi*, which is initialised at 0.01. This provides a good balance between exploration/exploitation, and can be increased or decreased (between 0.001 and 0.05). For functions that return promising improvements this is left unchanged at *xi* = 0.01.
+The exploration/exploitation balance is controlled by *xi*, which is initialised at 0.01. This provides a good balance between exploration/exploitation, and can be increased (*favouring exploration*) or decreased (*favouring exploitation*). For functions that return promising improvements this is left unchanged at *xi* = 0.01. At round 12, **F1**, **F4** and **F8** were lowered to *xi* = **0.005**. At round 13 (final round), *xi* was lowered to **0** across the board.
 
 Each notebook contains all inputs/outputs for queries within that function, with any parameter or script changes noted at the exact stage they were made.
 
